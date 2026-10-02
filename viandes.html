@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nos viandes · Boucherie Eric Loubet</title>
+<meta name="description" content="Bœuf, veau, agneau, porc, volailles et charcuterie artisanale à Retournac. Schéma des morceaux du bœuf.">
+<link rel="icon" href="assets/img/logo-taureau.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&amp;family=Caveat:wght@600&amp;family=Courier+Prime:wght@400;700&amp;family=Source+Serif+4:ital,wght@0,400;0,600;1,400&amp;display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/site.js" defer></script>
+</head>
+<body>
+<div class="bandeau">
+  <div class="wrap">
+    <div class="bandeau__infos">
+      <span>Boucherie · Charcuterie · Traiteur</span>
+      <span class="etat" data-etat-court data-etat="ferme">Horaires</span>
+      <span class="bandeau__tel">04&nbsp;71&nbsp;59&nbsp;40&nbsp;28</span>
+    </div>
+    <span class="bandeau__maquette">Maquette de présentation</span>
+  </div>
+</div>
+<header class="entete">
+  <div class="wrap">
+    <a class="marque" href="index.html" aria-label="Boucherie Charcuterie Eric Loubet, accueil">
+      <img src="assets/img/logo-taureau.jpg" alt="" width="200" height="265">
+      <span class="marque__texte">
+        <span class="marque__petit">Boucherie Charcuterie</span>
+        <span class="marque__nom">Eric Loubet</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Pages du site">
+      <a href="index.html">Accueil</a>
+      <a href="la-maison.html">La maison</a>
+      <a href="viandes.html" aria-current="page">Nos viandes</a>
+      <a href="traiteur.html">Traiteur &amp; fêtes</a>
+      <a href="fin-gras.html">Fin Gras du Mézenc</a>
+      <a href="infos.html">Infos &amp; accès</a>
+    </nav>
+    <a class="appel" href="tel:+33471594028"><small>Commander</small><b>04&nbsp;71&nbsp;59&nbsp;40&nbsp;28</b></a>
+  </div>
+</header>
+<div class="page">
+<main id="contenu">
+<section class="comptoir">
+  <div class="wrap">
+    <div>
+      <span class="etiquette">Nos viandes</span>
+      <h1>Au comptoir</h1>
+    </div>
+    <p>Bœuf, veau, agneau, porc, volailles et charcuterie. La vitrine change avec les arrivages et les saisons.</p>
+  </div>
+</section>
+<div class="onglets" data-onglets>
+  <div class="wrap">
+    <div class="onglets__liste" role="tablist" aria-label="Rayons de la boucherie">
+      <button role="tab" data-onglet="boeuf" aria-selected="true">Bœuf</button>
+      <button role="tab" data-onglet="veau" aria-selected="false">Veau</button>
+      <button role="tab" data-onglet="porc" aria-selected="false">Porc</button>
+      <button role="tab" data-onglet="agneau" aria-selected="false">Agneau</button>
+      <button role="tab" data-onglet="volaille" aria-selected="false">Volailles</button>
+      <button role="tab" data-onglet="charcuterie" aria-selected="false">Charcuterie</button>
+    </div>
+  </div>
+</div>
+<section class="panneau" data-panneau="boeuf" id="p-boeuf" hidden>
+  <div class="wrap">
+    <h2 class="titre-section">Le bœuf</h2>
+    <p class="intro">Cliquez sur un morceau du schéma pour voir ce qu'on y découpe et comment le cuire.</p>
+    <div class="schema">
+      <figure class="schema__dessin">
+        <svg viewBox="0 0 640 360" role="group" aria-label="Schéma du bœuf : cliquez sur un morceau pour le détail">
+  <path d="M96,72 L86,40 L112,60 Z" fill="#f3efe6"/>
+  <polygon class="zone-tete" points="28,112 92,72 128,82 132,192 98,216 54,198 30,150"/>
+  <path d="M104,80 L78,76 L92,98 Z" fill="#4a4541" stroke="#f3efe6" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="68" cy="118" r="4.5" fill="#f3efe6"/>
+  <path d="M556,110 C596,126 604,206 588,254" fill="none" stroke="#f3efe6" stroke-width="3" stroke-linecap="round"/>
+  <path d="M588,254 L578,282 L598,282 Z" fill="#f3efe6"/>
+  <polygon class="zone" data-zone="collier" role="button" tabindex="0" aria-pressed="false" aria-label="Collier" points="128,82 214,62 222,176 132,192"><title>Collier</title></polygon>
+  <polygon class="zone" data-zone="paleron" role="button" tabindex="0" aria-pressed="false" aria-label="Épaule, paleron" points="214,62 296,56 300,168 222,176"><title>Épaule · Paleron</title></polygon>
+  <polygon class="zone" data-zone="cotes" role="button" tabindex="0" aria-pressed="false" aria-label="Côtes" points="296,56 380,58 384,160 300,168"><title>Côtes</title></polygon>
+  <polygon class="zone" data-zone="reins" role="button" tabindex="0" aria-pressed="false" aria-label="Faux-filet et filet" points="380,58 450,64 452,152 384,160"><title>Faux-filet · Filet</title></polygon>
+  <polygon class="zone" data-zone="croupe" role="button" tabindex="0" aria-pressed="false" aria-label="Croupe, rumsteck" points="450,64 516,80 526,150 452,152"><title>Croupe · Rumsteck</title></polygon>
+  <polygon class="zone" data-zone="cuisse" role="button" tabindex="0" aria-pressed="false" aria-label="Cuisse" points="516,80 556,124 560,236 484,256 452,152 526,150"><title>Cuisse</title></polygon>
+  <polygon class="zone" data-zone="poitrine" role="button" tabindex="0" aria-pressed="false" aria-label="Poitrine et plat de côtes" points="222,176 300,168 384,160 452,152 484,256 236,236"><title>Poitrine · Plat de côtes</title></polygon>
+  <polygon class="zone" data-zone="jarret-av" role="button" tabindex="0" aria-pressed="false" aria-label="Jarret avant" points="240,238 302,244 294,334 258,334"><title>Jarret avant</title></polygon>
+  <polygon class="zone" data-zone="jarret-ar" role="button" tabindex="0" aria-pressed="false" aria-label="Jarret arrière" points="490,257 556,240 538,334 502,334"><title>Jarret arrière</title></polygon>
+</svg>
+        <div class="zone-liste" data-zone-liste></div>
+        <figcaption>Le bœuf vu de côté, découpé comme au comptoir.</figcaption>
+      </figure>
+      <div class="fiche" data-fiche aria-live="polite"></div>
+    </div>
+    <div class="provenance" style="margin-top:2rem"><b>Provenance et choix</b>Du bœuf de races à viande, d'Aubrac et du Limousin. Au printemps, le Fin Gras du Mézenc, sous appellation d'origine protégée. <a href="fin-gras.html">En savoir plus</a>.</div>
+  </div>
+</section>
+<section class="panneau" data-panneau="veau" id="p-veau" hidden>
+  <div class="wrap">
+    <h2 class="titre-section">Le veau</h2>
+    <p class="intro">Un veau tendre et clair, à cuire doucement.</p>
+    <div class="provenance"><b>Provenance et choix</b>Veau élevé sous la mère. Rôtis farcis préparés à la boutique sur demande.</div>
+    <div style="margin-top:2rem"><ul class="produits"><li><strong>Rôti de veau farci</strong><span>Ficelé à la boutique, farce selon la recette du moment.</span></li><li><strong>Côte et escalope</strong><span>À la poêle, avec une noix de beurre.</span></li><li><strong>Blanquette, sauté</strong><span>Épaule et poitrine, pour les plats mijotés.</span></li><li><strong>Osso buco</strong><span>Jarret en tranches avec son os.</span></li><li><strong>Paupiettes</strong><span>À farcir ou déjà prêtes.</span></li><li><strong>Ris de veau</strong><span>Pour les fêtes, en bouchée ou en cassolette.</span></li><li><strong>Filet de veau</strong><span>Pour les grandes tables, avec une sauce forestière.</span></li></ul></div>
+    
+  </div>
+</section>
+<section class="panneau" data-panneau="porc" id="p-porc" hidden>
+  <div class="wrap">
+    <h2 class="titre-section">Le porc</h2>
+    <p class="intro">Pour la poêle, le four et le barbecue.</p>
+    <div class="provenance"><b>Provenance et choix</b>Découpes du jour, que l'on peut aussi préparer selon vos besoins.</div>
+    <div style="margin-top:2rem"><ul class="produits"><li><strong>Filet mignon</strong><span>Rôti entier ou en médaillons.</span></li><li><strong>Rôti de porc</strong><span>Échine ou longe, ficelé.</span></li><li><strong>Côtes et travers</strong><span>Au four ou au barbecue.</span></li><li><strong>Saucisses fraîches</strong><span>Pour la poêle ou la plancha.</span></li><li><strong>Poitrine</strong><span>Fraîche ou salée, pour le petit salé.</span></li><li><strong>Sauté et émincé</strong><span>Pour les plats en sauce.</span></li></ul></div>
+    
+  </div>
+</section>
+<section class="panneau" data-panneau="agneau" id="p-agneau" hidden>
+  <div class="wrap">
+    <h2 class="titre-section">L'agneau</h2>
+    <p class="intro">La spécialité de la vitrine au printemps.</p>
+    <div class="provenance"><b>Provenance et choix</b>Pièces entières, désossées, farcies ou en préparations prêtes à cuire.</div>
+    <div style="margin-top:2rem"><ul class="produits"><li><strong>Gigot</strong><span>Entier, raccourci ou en tranches.</span></li><li><strong>Carré et côtes</strong><span>Au grill ou à la poêle.</span></li><li><strong>Épaule</strong><span>Roulée ou en morceaux pour le mijoté.</span></li><li><strong>Rôti d'agneau farci</strong><span>Farci aux herbes, enrobé de pavot.</span></li><li><strong>Tartare d'agneau</strong><span>Boulgour, menthe, pignons et citron confit.</span></li><li><strong>Brochettes</strong><span>Marinées selon la saison.</span></li></ul></div>
+    
+  </div>
+</section>
+<section class="panneau" data-panneau="volaille" id="p-volaille" hidden>
+  <div class="wrap">
+    <h2 class="titre-section">Les volailles</h2>
+    <p class="intro">Le poulet du dimanche et les volailles de fête.</p>
+    <div class="provenance"><b>Provenance et choix</b>Volailles fermières sous Label Rouge pour les fêtes&nbsp;: chapon, dinde, poularde. Rôtisserie sur place.</div>
+    <div style="margin-top:2rem"><ul class="produits"><li><strong>Poulet rôti</strong><span>À la rôtisserie, à emporter chaud.</span></li><li><strong>Pintade</strong><span>Entière ou chaponnée.</span></li><li><strong>Chapon fermier</strong><span>Label Rouge, pour Noël.</span></li><li><strong>Dinde fermière</strong><span>Label Rouge, entière ou en rôti.</span></li><li><strong>Poularde</strong><span>Fermière, pour les repas de famille.</span></li><li><strong>Caille</strong><span>Entière ou farcie.</span></li><li><strong>Canard et foie gras</strong><span>Magret, cuisse, foie gras de canard.</span></li></ul></div>
+    
+  </div>
+</section>
+<section class="panneau" data-panneau="charcuterie" id="p-charcuterie" hidden>
+  <div class="wrap">
+    <h2 class="titre-section">La charcuterie</h2>
+    <p class="intro">Du jambon du matin au saucisson de l'apéritif.</p>
+    <div class="provenance"><b>Provenance et choix</b>Charcuterie artisanale, à la coupe ou à la pièce. Les saucissons secs sont suspendus au mur de la boutique.</div>
+    <div style="margin-top:2rem"><ul class="produits"><li><strong>Jambon cuit et cru</strong><span>À la coupe, tranché devant vous.</span></li><li><strong>Saucissons secs</strong><span>Entiers ou à la tranche.</span></li><li><strong>Pâtés et terrines</strong><span>Sanglier, volailles, veau, porc.</span></li><li><strong>Boudin blanc</strong><span>Nature, aux morilles ou truffé.</span></li><li><strong>Saucisses</strong><span>Fraîches ou sèches.</span></li><li><strong>Plateaux d'apéritif</strong><span>Sur commande, selon le nombre de convives.</span></li></ul></div>
+    
+  </div>
+</section>
+<section class="appel-fetes">
+  <div class="wrap">
+    <div>
+      <h2>Une pièce particulière en tête&nbsp;?</h2>
+      <p>Rôti à ficeler, gigot désossé, quantité pour une grande tablée&nbsp;: dites-le-nous, on prépare à l'avance.</p>
+    </div>
+    <span class="tel">04&nbsp;71&nbsp;59&nbsp;40&nbsp;28</span>
+  </div>
+</section>
+</main>
+<footer class="pied">
+  <div class="wrap">
+    <div class="pied__grille">
+      <div>
+        <img class="pied__logo" src="assets/img/logo-complet.jpg" alt="Boucherie Charcuterie Eric Loubet" width="380" height="270">
+        <p>Boucher, charcutier, traiteur à Retournac, en Haute-Loire.</p>
+      </div>
+      <div>
+        <h4>Le site</h4>
+        <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="la-maison.html">La maison</a></li>
+        <li><a href="viandes.html">Nos viandes</a></li>
+        <li><a href="traiteur.html">Traiteur &amp; fêtes</a></li>
+        <li><a href="fin-gras.html">Fin Gras du Mézenc</a></li>
+        <li><a href="infos.html">Infos &amp; accès</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Horaires</h4>
+        <ul class="mini-horaires" data-mini-horaires></ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>9 rue du Marché<br>43130 Retournac</p>
+        <p style="margin-top:.8rem"><a href="tel:+33471594028">04&nbsp;71&nbsp;59&nbsp;40&nbsp;28</a><br>boucherie.loubet@orange.fr</p>
+        <p style="margin-top:.8rem"><a href="https://www.google.com/maps/search/?api=1&amp;query=9+rue+du+March%C3%A9+43130+Retournac">Itinéraire</a></p>
+      </div>
+    </div>
+    <small>Boucherie traiteur Loubet Eric · SIRET 494&nbsp;053&nbsp;713&nbsp;00017 · Maquette de présentation proposée à titre d'exemple, ce site n'est pas encore le site officiel de la boutique.</small>
+  </div>
+</footer>
+</div>
+</body>
+</html>

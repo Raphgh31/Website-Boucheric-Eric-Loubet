@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Traiteur et fêtes · Boucherie Eric Loubet</title>
+<meta name="description" content="Plats cuisinés, rôtisserie et carte des fêtes de la boucherie Eric Loubet à Retournac. Préparez votre commande en ligne.">
+<link rel="icon" href="assets/img/logo-taureau.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&amp;family=Caveat:wght@600&amp;family=Courier+Prime:wght@400;700&amp;family=Source+Serif+4:ital,wght@0,400;0,600;1,400&amp;display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/site.js" defer></script>
+</head>
+<body>
+<div class="bandeau">
+  <div class="wrap">
+    <div class="bandeau__infos">
+      <span>Boucherie · Charcuterie · Traiteur</span>
+      <span class="etat" data-etat-court data-etat="ferme">Horaires</span>
+      <span class="bandeau__tel">04&nbsp;71&nbsp;59&nbsp;40&nbsp;28</span>
+    </div>
+    <span class="bandeau__maquette">Maquette de présentation</span>
+  </div>
+</div>
+<header class="entete">
+  <div class="wrap">
+    <a class="marque" href="index.html" aria-label="Boucherie Charcuterie Eric Loubet, accueil">
+      <img src="assets/img/logo-taureau.jpg" alt="" width="200" height="265">
+      <span class="marque__texte">
+        <span class="marque__petit">Boucherie Charcuterie</span>
+        <span class="marque__nom">Eric Loubet</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Pages du site">
+      <a href="index.html">Accueil</a>
+      <a href="la-maison.html">La maison</a>
+      <a href="viandes.html">Nos viandes</a>
+      <a href="traiteur.html" aria-current="page">Traiteur &amp; fêtes</a>
+      <a href="fin-gras.html">Fin Gras du Mézenc</a>
+      <a href="infos.html">Infos &amp; accès</a>
+    </nav>
+    <a class="appel" href="tel:+33471594028"><small>Commander</small><b>04&nbsp;71&nbsp;59&nbsp;40&nbsp;28</b></a>
+  </div>
+</header>
+<div class="page">
+<main id="contenu">
+<section class="comptoir">
+  <div class="wrap">
+    <div>
+      <span class="etiquette">Traiteur &amp; fêtes</span>
+      <h1>Du plat du jour à la table de Noël</h1>
+    </div>
+    <p>Plats cuisinés, rôtisserie, accompagnements, et une carte des fêtes pour les grandes occasions.</p>
+  </div>
+</section>
+<div class="onglets" data-onglets>
+  <div class="wrap">
+    <div class="onglets__liste" role="tablist" aria-label="Rubriques du traiteur">
+      <button role="tab" data-onglet="quotidien" aria-selected="true">Au quotidien</button>
+      <button role="tab" data-onglet="fetes" aria-selected="false">Carte des fêtes</button>
+      <button role="tab" data-onglet="commande" aria-selected="false">Préparer ma commande</button>
+    </div>
+  </div>
+</div>
+
+<section class="panneau" data-panneau="quotidien" id="p-quotidien">
+  <div class="wrap deux">
+    <figure class="photo">
+      <img src="assets/img/plat-traiteur.jpg" alt="Plats cuisinés du traiteur en barquettes, sauce crémeuse parsemée de ciboulette" width="640" height="640" loading="lazy">
+      <figcaption>Plats du traiteur préparés en barquettes, prêts à réchauffer.</figcaption>
+    </figure>
+    <div class="texte">
+      <h2>À emporter, tous les jours</h2>
+      <p>Pas le temps de cuisiner&nbsp;? Le traiteur de la maison prépare des plats cuisinés, des accompagnements et des volailles à la rôtisserie.</p>
+      <ul class="liste-points">
+        <li>La rôtisserie&nbsp;: poulets et volailles, cuits sur place.</li>
+        <li>Les plats cuisinés, à la part ou à la barquette.</li>
+        <li>Les accompagnements&nbsp;: gratins, purées, risotto.</li>
+        <li>Les entrées et les terrines pour commencer le repas.</li>
+      </ul>
+      <p>Les plats changent selon les jours et les saisons. Demandez ce qu'il y a au comptoir.</p>
+    </div>
+  </div>
+</section>
+
+<section class="panneau" data-panneau="fetes" id="p-fetes" hidden>
+  <div class="wrap">
+    <div class="deux" style="margin-bottom:2.5rem">
+      <div class="texte">
+        <h2>La carte des fêtes</h2>
+        <p>À l'occasion des fêtes de fin d'année, Eric Loubet et son équipe proposent un large choix de viandes et de charcuteries. Pour vous satisfaire au mieux, passez commande quelques jours avant, au magasin ou par téléphone au 04&nbsp;71&nbsp;59&nbsp;40&nbsp;28.</p>
+        <p class="avis-prix">Les tarifs ci-dessous viennent de la carte de Noël 2024. Ils servent d'exemple et seront remplacés par ceux de l'année en cours.</p>
+      </div>
+      <figure class="photo">
+        <img src="assets/img/roti-farci.jpg" alt="Rôti farci coupé en deux, farce aux herbes en spirale dans la viande" width="640" height="640" loading="lazy">
+        <figcaption>Un rôti farci coupé en deux&nbsp;: la farce aux herbes dessine une spirale.</figcaption>
+      </figure>
+    </div>
+    <div class="carte"><section><h3>Entrées froides</h3><ul><li><span class="nom">Foie gras de canard</span><span class="points"></span><span class="prix">120&nbsp;€/kg</span></li><li><span class="nom">Médaillon de saumon</span><span class="points"></span><span class="prix">30,90&nbsp;€/kg</span></li><li><span class="nom">Saumon fumé<small>Craponne-sur-Arzon</small></span><span class="points"></span><span class="prix">74,90&nbsp;€/kg</span></li><li><span class="nom">Terrines au choix<small>Sanglier, volailles, veau et porc</small></span><span class="points"></span><span class="prix">en boutique</span></li></ul></section><section><h3>Entrées chaudes</h3><ul><li><span class="nom">Bouchée aux ris de veau</span><span class="points"></span><span class="prix">5,90&nbsp;€/pièce</span></li><li><span class="nom">Boudin blanc nature</span><span class="points"></span><span class="prix">16,90&nbsp;€/kg</span></li><li><span class="nom">Boudin blanc aux morilles</span><span class="points"></span><span class="prix">21,90&nbsp;€/kg</span></li><li><span class="nom">Boudin blanc truffé</span><span class="points"></span><span class="prix">28,90&nbsp;€/kg</span></li><li><span class="nom">Cassolette aux ris de veau et aux morilles</span><span class="points"></span><span class="prix">7,90&nbsp;€/pièce</span></li><li><span class="nom">Coquille Saint-Jacques</span><span class="points"></span><span class="prix">6,50&nbsp;€/pièce</span></li><li><span class="nom">Feuilleté aux morilles</span><span class="points"></span><span class="prix">4,50&nbsp;€/pièce</span></li></ul></section><section><h3>Volailles de fête</h3><ul><li><span class="nom">Caille</span><span class="points"></span><span class="prix">en boutique</span></li><li><span class="nom">Chapon fermier<small>Label Rouge</small></span><span class="points"></span><span class="prix">17,90&nbsp;€/kg</span></li><li><span class="nom">Suprême de chapon</span><span class="points"></span><span class="prix">25,90&nbsp;€/kg</span></li><li><span class="nom">Pintade chaponnée</span><span class="points"></span><span class="prix">21,90&nbsp;€/kg</span></li><li><span class="nom">Cuisse de chapon</span><span class="points"></span><span class="prix">19,90&nbsp;€/kg</span></li><li><span class="nom">Dinde fermière<small>Label Rouge</small></span><span class="points"></span><span class="prix">18,90&nbsp;€/kg</span></li><li><span class="nom">Poularde fermière</span><span class="points"></span><span class="prix">17,90&nbsp;€/kg</span></li></ul></section><section><h3>Les farcis</h3><ul><li><span class="nom">Rôti de chapon, farce forestière<small>Cèpes et trompettes des morts</small></span><span class="points"></span><span class="prix">29,90&nbsp;€/kg</span></li><li><span class="nom">Rôti de pintade, farce aux marrons</span><span class="points"></span><span class="prix">24,90&nbsp;€/kg</span></li><li><span class="nom">Rôti de veau farci</span><span class="points"></span><span class="prix">selon recette</span></li></ul></section><section><h3>Spécialités bouchères</h3><ul><li><span class="nom">Fondue bourguignonne</span><span class="points"></span><span class="prix">en boutique</span></li><li><span class="nom">Gigot</span><span class="points"></span><span class="prix">en boutique</span></li></ul></section><section><h3>Plats cuisinés</h3><ul><li><span class="nom">Carbonade de sanglier à la bière</span><span class="points"></span><span class="prix">8,90&nbsp;€/part</span></li><li><span class="nom">Filet de poularde sauce morilles</span><span class="points"></span><span class="prix">9,90&nbsp;€/part</span></li><li><span class="nom">Filet de veau sauce forestière</span><span class="points"></span><span class="prix">10,90&nbsp;€/part</span></li></ul></section><section><h3>Le poisson</h3><ul><li><span class="nom">Corolle de limande<small>Beurre d'ail des ours</small></span><span class="points"></span><span class="prix">9,90&nbsp;€/part</span></li></ul></section><section><h3>Les accompagnements</h3><ul><li><span class="nom">Gratin de courge aux châtaignes</span><span class="points"></span><span class="prix">16,90&nbsp;€/kg</span></li><li><span class="nom">Gratin dauphinois aux cèpes</span><span class="points"></span><span class="prix">3,90&nbsp;€/part</span></li><li><span class="nom">Pomme dauphine</span><span class="points"></span><span class="prix">18,90&nbsp;€/kg</span></li><li><span class="nom">Purée à la truffe noire</span><span class="points"></span><span class="prix">19,90&nbsp;€/kg</span></li><li><span class="nom">Risotto aux cèpes</span><span class="points"></span><span class="prix">3,50&nbsp;€/part</span></li></ul></section></div>
+    <p style="margin-top:2.5rem"><a class="btn" href="#commande" onclick="document.querySelector('[data-onglet=commande]').click();return false;">Préparer ma commande</a></p>
+  </div>
+</section>
+
+<section class="panneau" data-panneau="commande" id="p-commande" hidden>
+  <div class="wrap">
+    <h2 class="titre-section">Préparer ma commande</h2>
+    <p class="intro">Choisissez vos quantités, le récapitulatif se met à jour. Copiez-le, puis envoyez-le ou donnez-le au comptoir. Les prix au kilo sont estimés, le montant final dépend du poids exact.</p>
+    <form class="commande" data-commande autocomplete="off">
+      <div class="lignes" data-lignes></div>
+      <aside class="recap" aria-live="polite">
+        <h3>Votre récapitulatif</h3>
+        <div class="champs">
+          <label for="c-nom">Nom<input id="c-nom" type="text" placeholder="Votre nom"></label>
+          <label for="c-date">Retrait souhaité<input id="c-date" type="date"></label>
+          <label for="c-note">Remarque<textarea id="c-note" rows="2" placeholder="Cuisson, découpe, allergies…"></textarea></label>
+        </div>
+        <pre data-recap></pre>
+        <div class="total"><span>Total estimé</span><span data-total>0,00&nbsp;€</span></div>
+        <button type="button" class="btn btn--noir" data-copier>Copier le récapitulatif</button>
+        <p class="ok" data-ok></p>
+        <p class="mini">Pour confirmer&nbsp;: 04&nbsp;71&nbsp;59&nbsp;40&nbsp;28. Dans la version finale du site, ce formulaire envoie la commande directement à la boutique.</p>
+      </aside>
+    </form>
+  </div>
+</section>
+</main>
+<footer class="pied">
+  <div class="wrap">
+    <div class="pied__grille">
+      <div>
+        <img class="pied__logo" src="assets/img/logo-complet.jpg" alt="Boucherie Charcuterie Eric Loubet" width="380" height="270">
+        <p>Boucher, charcutier, traiteur à Retournac, en Haute-Loire.</p>
+      </div>
+      <div>
+        <h4>Le site</h4>
+        <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="la-maison.html">La maison</a></li>
+        <li><a href="viandes.html">Nos viandes</a></li>
+        <li><a href="traiteur.html">Traiteur &amp; fêtes</a></li>
+        <li><a href="fin-gras.html">Fin Gras du Mézenc</a></li>
+        <li><a href="infos.html">Infos &amp; accès</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Horaires</h4>
+        <ul class="mini-horaires" data-mini-horaires></ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>9 rue du Marché<br>43130 Retournac</p>
+        <p style="margin-top:.8rem"><a href="tel:+33471594028">04&nbsp;71&nbsp;59&nbsp;40&nbsp;28</a><br>boucherie.loubet@orange.fr</p>
+        <p style="margin-top:.8rem"><a href="https://www.google.com/maps/search/?api=1&amp;query=9+rue+du+March%C3%A9+43130+Retournac">Itinéraire</a></p>
+      </div>
+    </div>
+    <small>Boucherie traiteur Loubet Eric · SIRET 494&nbsp;053&nbsp;713&nbsp;00017 · Maquette de présentation proposée à titre d'exemple, ce site n'est pas encore le site officiel de la boutique.</small>
+  </div>
+</footer>
+</div>
+</body>
+</html>
